@@ -186,7 +186,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-06-24 11:50:02" itemprop="dateCreated datePublished" datetime="2020-06-24T11:50:02+08:00">2020-06-24</time>
+              <time title="Created: 2020-06-24 12:17:45" itemprop="dateCreated datePublished" datetime="2020-06-24T12:17:45+08:00">2020-06-24</time>
             </span>
 
           
@@ -201,18 +201,6 @@
 
       
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/06/24/hello-world/#more" rel="contents">
@@ -264,7 +252,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-06-24 10:45:50 / Modified: 11:49:29" itemprop="dateCreated datePublished" datetime="2020-06-24T10:45:50+08:00">2020-06-24</time>
+              <time title="Created: 2020-06-24 10:45:50 / Modified: 12:17:43" itemprop="dateCreated datePublished" datetime="2020-06-24T10:45:50+08:00">2020-06-24</time>
             </span>
 
           
@@ -279,17 +267,6 @@
 
       
           <p>自從進入職場工作後,除了使用C#之外還會用到一些Win32 API來做一些事情,像是程式之間的溝通或是Listen System Event等等,但是有用過Win32 API就知道,這是開放給C/C++使用,但是C#也不是不能用,只是需要一些轉換，而本篇會以PostMessage這個API為例來介紹<a href="https://pinvoke.net/index.aspx" target="_blank" rel="noopener">Pinvoke</a>這個網頁。</p>
-<ul>
-<li>這邊看到的是<a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postmessagea" target="_blank" rel="noopener">MSDN</a>中所會出現的API介紹，我們在這邊將”PostMessage”這個API名稱複製下來<h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">BOOL <span class="title">PostMessageA</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">  HWND   hWnd,</span></span></span><br><span class="line"><span class="function"><span class="params">  UINT   Msg,</span></span></span><br><span class="line"><span class="function"><span class="params">  WPARAM wParam,</span></span></span><br><span class="line"><span class="function"><span class="params">  LPARAM lParam</span></span></span><br><span class="line"><span class="function"><span class="params">)</span></span>;</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ul>
-<ul>
-<li>透過 <a href="https://pinvoke.net/index.aspx" target="_blank" rel="noopener">Pinvoke</a> 中左邊的地方查詢，就可以得到中間轉換C#可以使用的程式碼了。<br><img src="pinvoke.PNG" alt=""><h3 id="C-1"><a href="#C-1" class="headerlink" title="C#"></a>C#</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[return: MarshalAs(UnmanagedType.Bool)]</span><br><span class="line">[DllImport(&quot;user32.dll&quot;, SetLastError &#x3D; true, CharSet &#x3D; CharSet.Auto)]</span><br><span class="line">static extern bool PostMessage(HandleRef hWnd, uint Msg, IntPtr wParam, IntPtr lParam);</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/06/24/pinvoke/#more" rel="contents">
