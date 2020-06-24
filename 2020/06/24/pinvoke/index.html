@@ -29,7 +29,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s90512g.github.io/2020/06/24/pinvoke/pinvoke.PNG">
 <meta property="article:published_time" content="2020-06-24T02:45:50.000Z">
-<meta property="article:modified_time" content="2020-06-24T03:10:44.422Z">
+<meta property="article:modified_time" content="2020-06-24T03:49:29.405Z">
 <meta property="article:author" content="Hank Zheng">
 <meta property="article:tag" content="Win32 API">
 <meta property="article:tag" content="C#">
@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-06-24 10:45:50 / Modified: 11:10:44" itemprop="dateCreated datePublished" datetime="2020-06-24T10:45:50+08:00">2020-06-24</time>
+              <time title="Created: 2020-06-24 10:45:50 / Modified: 11:49:29" itemprop="dateCreated datePublished" datetime="2020-06-24T10:45:50+08:00">2020-06-24</time>
             </span>
 
           
@@ -217,9 +217,11 @@
 </li>
 </ul>
 <ul>
-<li>透過 <a href="https://pinvoke.net/index.aspx" target="_blank" rel="noopener">Pinvoke</a> 中左邊的地方查詢，就可以得到中間轉換C#可以使用的程式碼了。<br><img src="pinvoke.PNG" alt=""><h3 id="C-1"><a href="#C-1" class="headerlink" title="C#"></a>C#</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[return: MarshalAs(UnmanagedType.Bool)]</span><br><span class="line">[DllImport(&quot;user32.dll&quot;, SetLastError &#x3D; true, CharSet &#x3D; CharSet.Auto)]</span><br><span class="line">static extern bool PostMessage(HandleRef hWnd, uint Msg, IntPtr wParam, IntPtr lParam);</span><br></pre></td></tr></table></figure></li>
-</ul>
+<li>透過 <a href="https://pinvoke.net/index.aspx" target="_blank" rel="noopener">Pinvoke</a> 中左邊的地方查詢，就可以得到中間轉換C#可以使用的程式碼了。<br><img src="pinvoke.PNG" alt=""><h3 id="C-1"><a href="#C-1" class="headerlink" title="C#"></a>C#</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[return: MarshalAs(UnmanagedType.Bool)]</span><br><span class="line">[DllImport(&quot;user32.dll&quot;, SetLastError &#x3D; true, CharSet &#x3D; CharSet.Auto)]</span><br><span class="line">static extern bool PostMessage(HandleRef hWnd, uint Msg, IntPtr wParam, IntPtr lParam);</span><br></pre></td></tr></table></figure>
 
+</li>
+</ul>
+<a id="more"></a>
     </div>
 
     
@@ -237,11 +239,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/06/17/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/24/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
